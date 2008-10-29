@@ -55,8 +55,8 @@ function cat2email ($post_ID = 0) {
 	$headers = "From: \"$myname\" <$myemailadd>\n";
 
 	// Set email subject
-	//$subject = '[' . get_option('blogname') . '] ' . $post->post_title;
-	$subject = $post->post_title;
+	$subject = '[' . get_option('blogname') . '] ' . $post->post_title;
+	// $subject = $post->post_title;
 	$mailtext = '';
 	$htmltext = '';
 	$plaintext = '';
