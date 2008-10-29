@@ -24,7 +24,7 @@ function cat2email ($post_ID = 0) {
 	if (1 === $c2e_token) { 
 		return $post_ID; 
 	}
-	
+
 	// set the token, so that we don't run again
 	$c2e_token = 1;
 
@@ -51,8 +51,8 @@ function cat2email ($post_ID = 0) {
 	}
 
 	// Set sender details
-	$headers = "MIME-Version: 1.0\n";
-	$headers .= "From: \"$myname\" <$myemailadd>\n";
+	// $headers = "MIME-Version: 1.0\n";
+	$headers = "From: \"$myname\" <$myemailadd>\n";
 
 	// Set email subject
 	//$subject = '[' . get_option('blogname') . '] ' . $post->post_title;
